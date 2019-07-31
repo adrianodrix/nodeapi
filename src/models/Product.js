@@ -1,7 +1,7 @@
-const mongoose = require('mongoose')
 const mongoosePaginate = require('mongoose-paginate-v2')
+const con = require('@service/db')
 
-const ProductSchema = new mongoose.Schema({
+const ProductSchema = new con.Schema({
   title: {
     type: String,
     required: true,
@@ -23,4 +23,4 @@ ProductSchema.statics.findByTitle = title => this.find({ title: new RegExp(title
 
 ProductSchema.plugin(mongoosePaginate)
 
-module.exports = mongoose.model('Product', ProductSchema)
+module.exports = con.model('Product', ProductSchema)

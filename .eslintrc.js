@@ -16,6 +16,7 @@ module.exports = {
     "rules": {
         'semi': ["error", "never"],
         'arrow-parens': ["error", "as-needed"],
-        'import/no-unresolved': 'off'
+        'import/no-unresolved': 'off',
+        "no-restricted-globals": ["error", "event", "fdescribe"]
     }
 };
