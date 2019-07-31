@@ -23,4 +23,4 @@ ProductSchema.statics.findByTitle = title => this.find({ title: new RegExp(title
 
 ProductSchema.plugin(mongoosePaginate)
 
-mongoose.model('Product', ProductSchema)
+module.exports = mongoose.model('Product', ProductSchema)

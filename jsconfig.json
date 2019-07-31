@@ -8,7 +8,9 @@
       "@config/*": ["src/config/*"],
       "@controller/*": ["src/controllers/*"],
       "@model": ["src/models"],
-      "@service": ["src/service"]
+      "@service": ["src/service"],
+      "@helper": ["src/helpers"],
+      "@middleware": ["src/middlewares"]
     }
   },
   "exclude": ["node_modules", "dist"]
