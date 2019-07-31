@@ -6,11 +6,11 @@ module.exports = {
   async index(req, res) {
     const { page = 1 } = req.query
     const products = await Product
-      .paginate({}, { 
-        page, 
-        limit: 10, 
+      .paginate({}, {
+        page,
+        limit: 10,
         sort: { title: 1 },
-        customLabels: { docs: 'data'}
+        customLabels: { docs: 'data' },
       })
     return res.json(products)
   },
@@ -31,7 +31,7 @@ module.exports = {
   },
 
   async destroy(req, res) {
-    const product = await Product.findByIdAndRemove(req.params.id)
+    await Product.findByIdAndRemove(req.params.id)
     return res.json()
-  }
+  },
 }
