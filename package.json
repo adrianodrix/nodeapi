@@ -1,0 +1,53 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianodrix/nodeapi.git"
+  },
+  "keywords": [],
+  "author": "Adriano Santos <adrianodrix@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianodrix/nodeapi/issues"
+  },
+  "homepage": "https://github.com/adrianodrix/nodeapi#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.0.0",
+    "express-slow-down": "^1.3.1",
+    "module-alias": "^2.2.1",
+    "mongoose": "^5.6.7",
+    "mongoose-paginate-v2": "^1.3.0",
+    "require-dir": "^1.2.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.1"
+  },
+  "_moduleAliases": {
+    "@": "./src",
+    "@app": "./src/app.js",
+    "@config": "./src/config",
+    "@controller": "./src/controllers",
+    "@model": "./src/models",
+    "@service": "./src/service",
+    "@helper": "./src/helpers",
+    "@middleware": "./src/middlewares"
+  }
+}
