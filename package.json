@@ -1,11 +1,12 @@
 {
   "name": "nodeapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./bin/server.js"
+    "dev": "nodemon ./bin/server.js",
+    "start": "node ./bin/server.js"
   },
   "repository": {
     "type": "git",
